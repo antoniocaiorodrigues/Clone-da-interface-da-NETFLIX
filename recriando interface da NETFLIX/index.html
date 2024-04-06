@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    
 <head>
+    <!-- Meta tags para definir o conjunto de caracteres e a largura da tela -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para a folha de estilo principal -->
     <link rel="stylesheet" href="style/main.css">
 
-    <!--responsividade-->
+    <!-- Link para a folha de estilo responsiva -->
     <link rel="stylesheet" href="style/responsive.css">
 
-    <!--owl css-->
-    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <!-- Links para as folhas de estilo do carrossel Owl Carousel -->    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 
+    <!-- Título da página -->
     <title>NETFLIX CLONE</title>
 </head>
+
 <body>
+    <!-- Cabeçalho da página -->
     <header>
+        <!-- Contêiner para o logotipo e a navegação -->
         <div class="container">
+            <!-- Logotipo da Netflix -->
             <h2 class="logo">NETFLIX</h2>
+
+            <!-- Navegação -->
             <nav>
+                <!-- Links para as seções da página -->
                 <a href="#">Inicio</a>
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
@@ -27,19 +37,33 @@
         </div>
     </header>
 
+    <!-- Corpo da página -->
     <main>
-
+        <!-- Seção do filme principal -->
         <div class="filme-principal">
+            <!-- Contêiner para o filme principal -->
             <div class="container">
+                <!-- Título do filme principal -->
                 <h3 class="titulo">HOUSE OF CARDS</h3>
+
+                <!-- Descrição do filme principal -->
                 <p class="descricao">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p>
+                
+                <!-- Botões de ação para o filme principal -->
                 <div class="botoes">
+                    <!-- Botão para assistir ao filme -->
                     <button role="button" class="botao">
+                        <!-- Ícone de play -->
                         <i class="fas fa-play"></i>
+                        <!-- Texto do botão -->
                         ASSISTIR AGORA
                     </button>
+
+                    <!-- Botão para mais informações sobre o filme -->
                     <button role="button" class="botao">
+                        <!-- Ícone de informação -->
                         <i class="fas fa-info-circle"></i>
+                        <!-- Texto do botão -->
                         MAIS INFORMAÇÕES
                     </button>
                 </div>
@@ -47,9 +71,13 @@
         </div>
     </main>
 
+    <!-- Seção do carrossel de filmes -->
     <div class="carrosel-filmes">
+        <!-- Carrossel de filmes utilizando Owl Carousel -->
         <div class="owl-carousel owl-theme">
-                <div class="item">
+                <!-- Item do carrossel: filme -->
+                <div class="item">                
+                    <!-- Imagem do filme -->
                     <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
                 </div>
                 <div class="item">
@@ -82,14 +110,10 @@
         </div>
     </div>
 
-
-
+    <!-- Scripts JavaScript -->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
- 
-
- 
 </body>
 </html>
