@@ -1,133 +1,118 @@
+/* Define as variáveis de cor para vermelho e preto */
 :root{
-    --vermelho:#E50914;
-    --preta:#141414;
+    --vermelho: #E50914;
+    --preta: #141414;
 }
 
+/* Define estilos base para todos os elementos */
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/*elementos base*/
+/* Define estilos para o corpo da página */
 body{
-   background: var(--preta);
-   font-family: 'Arial', Times, serif;
-   color:white;
+    background: var(--preta); /* Define o fundo preto */
+    font-family: 'Arial', Times, serif; /* Define a fonte padrão */
+    color: white; /* Define a cor do texto como branco */
 }
 
-
+/* Define estilos para o cabeçalho */
 header .container{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    
+    display: flex; /* Usa flexbox para organizar os elementos internos */
+    flex-direction: row; /* Define a direção dos itens como linha */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
 }
 
+/* Define estilos para o logotipo */
 header .logo{
-    margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size:40px;
+    margin-left: 5px; /* Define a margem esquerda */
+    color: var(--vermelho); /* Usa a variável de cor vermelha */
+    font-family: 'Arial Black', Times; /* Define a fonte */
+    font-size: 40px; /* Define o tamanho da fonte */
 }
 
+/* Define estilos para os links no cabeçalho */
 header nav a{
-    text-decoration:none;
-    color:#AAA;
-    margin-right: 10px;
+    text-decoration: none; /* Remove a decoração de texto */
+    color: #AAA; /* Define a cor do texto */
+    margin-right: 10px; /* Define a margem direita */
 }
 
-
+/* Define estilos para os links no cabeçalho ao passar o mouse */
 header nav a:hover{
-    color:#fff;
+    color: #fff; /* Define a cor do texto ao passar o mouse */
 }
 
-/*filme principal*/
+/* Define estilos para o filme principal */
 .filme-principal{
-    font-size:16px;
-    background :  linear-gradiente ( rgba ( 0 , 0 , 0 , .50 ) , rgba ( 0 , 0 , 0 , .50 ) 100 % ) ,   url ( '../img/capa-house.jpg' );
-    height:400px;
-    background-size:cover;
- 
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    font-size: 16px; /* Define o tamanho da fonte */
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('../img/capa-house.jpg'); /* Define o plano de fundo com uma imagem e uma sobreposição */
+    height: 400px; /* Define a altura */
+    background-size: cover; /* Define o tamanho da imagem de fundo */
+    display: flex; /* Usa flexbox para organizar os elementos internos */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    justify-content: center; /* Alinha os itens verticalmente ao centro */
+    align-items: flex-start; /* Alinha os itens horizontalmente ao início */
 }
 
-
+/* Define estilos para a descrição do filme principal */
 .filme-principal .descricao{
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 10px; /* Define a margem superior */
+    margin-bottom: 40px; /* Define a margem inferior */
 }
 
-
+/* Define estilos para o título do filme principal */
 .filme-principal .titulo{
-    margin-top: 15%;
-    font-size: 40px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 15%; /* Define a margem superior */
+    font-size: 40px; /* Define o tamanho da fonte */
+    font-family: 'Trebuchet MS', Arial, sans-serif; /* Define a fonte */
 }
 
+/* Define estilos para os botões */
 .botao{
-    background-color: rgba(0,0,0,.50);
-    border:none;
-    color: white;
-
-    padding:15px 30px;
-    margin-right: 15px;
-    font-size: 12px;
-
-    cursor: pointer;
-    transition: .3s ease all;
+    background-color: rgba(0, 0, 0, .50); /* Define a cor de fundo */
+    border: none; /* Remove a borda */
+    color: white; /* Define a cor do texto como branco */
+    padding: 15px 30px; /* Define o preenchimento */
+    margin-right: 15px; /* Define a margem direita */
+    font-size: 12px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Define o cursor do mouse como ponteiro */
+    transition: .3s ease all; /* Define uma transição suave */
 }
 
+/* Define estilos para os botões ao passar o mouse */
 .botao:hover{
-    background-color:white;
-    color:black;
+    background-color: white; /* Define a cor de fundo ao passar o mouse */
+    color: black; /* Define a cor do texto ao passar o mouse */
 }
 
+/* Define estilos para o ícone dentro dos botões */
 .botao i{
-    margin-right: 8px;
+    margin-right: 8px; /* Define a margem direita */
 }
 
-
+/* Define estilos para o contêiner */
 .container{
-    margin-left: 20px;
+    margin-left: 20px; /* Define a margem esquerda */
 }
 
+/* Define estilos para o contêiner do filme principal */
 .filme-principal .container{
-    width: 70%;
+    width: 70%; /* Define a largura */
 }
 
+/* Define estilos para a caixa do filme */
 .box-filme{
-    height: 100%;
-    width: 100%;
-    display: block;
-    cursor: pointer;
+    height: 100%; /* Define a altura */
+    width: 100%; /* Define a largura */
+    display: block; /* Define como bloco */
+    cursor: pointer; /* Define o cursor do mouse como ponteiro */
 }
 
-
+/* Define estilos para o carrossel de filmes */
 .carrosel-filmes{
-    margin-top:5px;
+    margin-top: 5px; /* Define a margem superior */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
